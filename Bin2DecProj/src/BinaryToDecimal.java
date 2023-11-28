@@ -3,7 +3,8 @@ public class BinaryToDecimal {
     //Constraints:
     //Arrays not allowed.
     //Need to use a mathematical function.
-    //Prior value * 2 + next bit = next value Horners Method
+    //(1010101010) = (1 x 2^9) + (0 x 2^8) + ...
+    //Binary = (bit * 2^length of binary) + (nextbit * 2^length of binary-1) ...
     
 
     static public int calculateBinary(String input){
