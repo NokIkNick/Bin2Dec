@@ -7,9 +7,6 @@ public class BinaryToDecimal {
     
 
     static public int calculateBinary(String input){
-        if(input.length() > 10){
-            return 0;
-        }
         int result = 0;
         for(int i = 0; i < input.length() ; i++){
             result += (int) (Integer.parseInt(input.substring(i,i+1))*Math.pow(2,input.length()-1-i));
