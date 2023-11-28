@@ -13,7 +13,7 @@ public class BinaryToDecimal {
         int result = 0;
         for(int i = 0; i < input.length() ; i++){
             result += (int) (Integer.parseInt(input.substring(i,i+1))*Math.pow(2,input.length()-1-i));
-            System.out.println(i+" | "+result+ "|"+ Math.pow(2,input.length()-i));
+            System.out.println(i+" | "+result+ " | "+ Math.pow(2,input.length()-1-i));
         }
         return result;
     }
